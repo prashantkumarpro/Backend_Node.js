@@ -1,0 +1,21 @@
+🧠 Writing Multi-Byte Data in ArrayBuffer
+✅ .setInt8()
+👉 Allows writing an 8-bit signed integer (range: -128 to 127).
+👉 Can also store unsigned integers using .setUint8() (range: 0 to 255).
+❌ Limitation: Can only store values up to 8 bits (1 Byte).
+
+✅ .setInt16()
+👉 Allows writing a 16-bit signed integer (range: -32,768 to 32,767).
+👉 For unsigned, use .setUint16().
+🛠️ Syntax:
+view.setInt16(byteOffset, value, littleEndian?)
+🧭 Endian (Byte Order)
+The 3rd argument in .setInt16() and .getInt16() specifies the endianness.
+If omitted, the default is Big Endian (false) — MSB comes first.
+To use Little Endian, explicitly pass true.
+🧪 Example:
+view.setInt16(0, 260);        // Big Endian by default
+view.setInt16(0, 260, true);  // Little Endian (reversed byte order)
+🧾 Reading with .getInt16():
+view.getInt16(0);         // Big Endian
+view.getInt16(0, true);   // Little Endian

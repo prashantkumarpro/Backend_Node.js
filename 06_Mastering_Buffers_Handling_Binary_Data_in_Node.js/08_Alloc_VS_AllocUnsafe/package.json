@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "debug": "node --inspect-brk app.js",
+    "warning" : "node --trace-warnings app.js"
+  }
+}
