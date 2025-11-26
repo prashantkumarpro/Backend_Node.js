@@ -1,10 +1,13 @@
 import fs from 'fs'
 
-const fd = fs.openSync('text.txt', 'w+') // w => write mode
-// const fd = fs.openSync('text.txt', 'w') // r => read mode
-// const fd = fs.openSync('text.txt', 'w') // a => append mode
+const fd = fs.openSync('text.txt', 'w')
 
-// w+ => write and read mode 
-// r+ => read and wirte mode 
-// a+ => read and wirte mode 
-fs.writeSync(fd, "Hii")
+// const buff = Buffer.alloc('123')
+
+// fs.write(fd, "🔥", (err, bytesWritten, writtenData) => {
+//   console.log(bytesWritten)
+//   console.log(writtenData)
+// })
+
+const bytesWritten = fs.writeSync(fd,"👌");
+console.log(bytesWritten)
