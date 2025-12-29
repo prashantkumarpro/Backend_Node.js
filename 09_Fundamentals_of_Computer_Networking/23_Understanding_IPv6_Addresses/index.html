@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IPv6 Real-Time Demo</title>
+</head>
+
+<body>
+    <h2>IPv6 Live Updates</h2>
+    <p id="output">Waiting...</p>
+
+    <script>
+        const source = new EventSource('/events')
+
+        source.onmessage = (event) => {
+            const data = JSON.parse(event.data)
+            document.getElementById('output').innerText =
+                data.msg  + "\n" + "at " + data.time
+        }
+
+        source.onerror = () => {
+            document.getElementById('output').innerText = 'Reconnecting...'
+        }
+    </script>
+</body>
+
+</html>
