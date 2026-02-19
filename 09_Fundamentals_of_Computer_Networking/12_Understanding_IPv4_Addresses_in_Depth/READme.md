@@ -272,8 +272,8 @@ req.headers['x-forwarded-for']
 
 ## 🎯 Interview One-Liners
 
-* IPv4 is a **32-bit address**
-* Max IPv4 addresses = **2³²**
+* IPv4 Is a  **32-bit address**
+* Max IPv4 addresses  is =  to **2³²**
 * Loopback = **127.0.0.1**
 * Private IPs are **not routable on internet**
 * Subnet mask defines **network & host**
