@@ -280,13 +280,5 @@ req.headers['x-forwarded-for']
 
 ---
 
-## 🔜 What Next Should You Learn?
 
-I recommend this order:
-1️⃣ Subnetting practice (step-by-step)
-2️⃣ DNS working
-3️⃣ Ports & Sockets
-4️⃣ HTTP request–response
-5️⃣ IPv6 basics
-6️⃣ Networking interview Q&A
 
