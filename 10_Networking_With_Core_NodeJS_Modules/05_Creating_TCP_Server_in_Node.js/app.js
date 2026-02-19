@@ -7,7 +7,7 @@ server.on('connection', socket => {
   socket.on('data', chunk => {
     console.log(chunk.toString())
     // socket.write('Got your message')
-    socket.write('HTTP\n\nGot your message.')
+    socket.write("HTTP\n\nGot your message.")
     socket.end()
   })
 
