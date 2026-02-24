@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";
+// import cors from "cors";
 
 const app = express();
 const PORT = 4000;
@@ -25,6 +25,8 @@ app.use((req, res, next) => {
   // res.set("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
+
+
 
 app.use(express.static("public"));
 

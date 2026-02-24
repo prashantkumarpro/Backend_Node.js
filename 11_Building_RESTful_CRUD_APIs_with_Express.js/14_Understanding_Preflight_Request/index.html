@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,29 @@
     <!-- <link rel="stylesheet" href="http://localhost:4000/style.css" crossorigin> -->
     <!-- <script src="http://localhost:4000/script.js" type="module"></script> -->
 </head>
+
 <body>
     <h1>Hello World!</h1>
     <img src="http://localhost:4000/backend.png">
+
+    <script>
+
+        fetch('http://localhost:4000/api')
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+                return res.json();
+            }
+
+            )
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Fetch error:', error)
+            })
+    </script>
 </body>
+
 </html>
