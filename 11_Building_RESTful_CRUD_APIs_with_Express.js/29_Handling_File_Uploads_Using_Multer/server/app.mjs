@@ -1,7 +1,7 @@
 import express from 'express'
 import multer from 'multer'
 import path from 'path'
-
+import cors from 'cors'
 const app = express()
 const PORT = 4000
 
@@ -19,6 +19,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage })
 
+app.use(cors())
 app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
@@ -30,11 +31,11 @@ app.post(
     { name: 'bg', maxCount: 5 }
   ]),
   (req, res) => {
-    console.log(req.files)
+    // console.log(req.files)
 
-    // in multer req.body gives us input field value
-    console.log(req.body)
-    res.json(req.files)
+    // // in multer req.body gives us input field value
+    // console.log(req.body)
+    res.json({ files: req.files, body: req.body })
   }
 )
 
