@@ -1,0 +1,40 @@
+[
+  {
+    "id": "482bb589-aabe-4dbd-8c6e-28f1a6ef4d93",
+    "name": "root-prashant@gmail.com",
+    "userId": "7def6fa1-80c6-41c5-a354-3f5e089c717d",
+    "parentDirId": null,
+    "files": [],
+    "directories": [
+      "92017dd6-2cc2-40fb-823a-287b3deb77a1"
+    ]
+  },
+  {
+    "id": "c69c626a-bf3c-4985-9b59-18c21d4541c0",
+    "name": "root-dev@gmail.com",
+    "userId": "9ca39ba4-8721-4bbe-b344-18a09f66d445",
+    "parentDirId": null,
+    "files": [
+      "dff2ff70-7e73-40f5-9909-d1ad5ada262e"
+    ],
+    "directories": [
+      "966de543-9549-4edc-9496-d6057c216d07"
+    ]
+  },
+  {
+    "id": "966de543-9549-4edc-9496-d6057c216d07",
+    "name": "dev",
+    "parentDirId": "c69c626a-bf3c-4985-9b59-18c21d4541c0",
+    "userId": "9ca39ba4-8721-4bbe-b344-18a09f66d445",
+    "files": [],
+    "directories": []
+  },
+  {
+    "id": "92017dd6-2cc2-40fb-823a-287b3deb77a1",
+    "name": "PK",
+    "parentDirId": "482bb589-aabe-4dbd-8c6e-28f1a6ef4d93",
+    "userId": "7def6fa1-80c6-41c5-a354-3f5e089c717d",
+    "files": [],
+    "directories": []
+  }
+]
