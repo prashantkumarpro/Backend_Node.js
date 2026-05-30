@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 
 // const connectionUrl = "mongodb://anurag:anurag@127.0.0.1:27018/storageApp";
 const connectionUrl =
-  "mongodb://ram:ram@127.0.0.1:27018/storageApp?authSource=admin";
+  "mongodb://dataDock:dataDock%40108@ec2-3-92-51-247.compute-1.amazonaws.com/dataDock";
   
 const client = new MongoClient(connectionUrl);
 
