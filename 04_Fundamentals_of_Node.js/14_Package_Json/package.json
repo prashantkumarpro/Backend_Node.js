@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "node app.js",
+    "test": "ls",
+    "restart": "node",
+    "stop": "git -v",
+    "dev": "node --watch app.js",
+    "Hi": "pwd"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "express": "^5.1.0"
+  }
+}

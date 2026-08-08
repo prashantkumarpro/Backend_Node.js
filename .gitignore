@@ -1,6 +1,10 @@
 # Node modules
 node_modules/
+**/.vite/
+dist/
+.env
 
+.env
 # Logs
 logs
 *.log
